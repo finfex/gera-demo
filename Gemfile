@@ -71,11 +71,11 @@ gem 'dapi-archivable', '~> 0.1.2', require: 'archivable'
 gem 'ionicons-rails'
 gem 'active_link_to', github: 'BrandyMint/active_link_to'
 
+gem 'factory_bot'
+gem 'factory_bot_rails', github: 'thoughtbot/factory_bot_rails'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  gem 'factory_bot'
-  gem 'factory_bot_rails', github: 'thoughtbot/factory_bot_rails'
 end
 
 group :development do
