@@ -560,7 +560,7 @@ DEPENDENCIES
   noty_flash!
   nprogress-rails
   pg
-  puma (~> 3.11)
+  puma
   rails (~> 5.2.2.1)
   rails-assets-noty!
   redis (~> 4.0)
