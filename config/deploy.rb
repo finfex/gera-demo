@@ -15,6 +15,9 @@ set :config_files, fetch(:linked_files)
 
 set :app_version, AppVersion.format('%M.%m.%p')
 
+set :sidekiq_processes, 1
+set :sidekiq_options_per_process, ['--queue critical --queue default']
+
 set :deploy_to, -> { "/home/#{fetch(:user)}/#{fetch(:application)}" }
 
 ask :branch, ENV['BRANCH'] || proc { `git rev-parse --abbrev-ref HEAD`.chomp }
