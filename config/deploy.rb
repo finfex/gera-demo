@@ -14,8 +14,6 @@ set :linked_dirs, %w[log node_modules tmp/pids tmp/cache tmp/sockets public/asse
 set :config_files, fetch(:linked_files)
 
 set :app_version, AppVersion.format('%M.%m.%p')
-# set :bugsnag_api_key, ENV['BUGSNAG_API_KEY']
-#set :default_env, 'BUGSNAG_API_KEY' => Settings.bugsnag_api_key
 
 set :deploy_to, -> { "/home/#{fetch(:user)}/#{fetch(:application)}" }
 
