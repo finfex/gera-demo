@@ -1,0 +1,105 @@
+@import 'variables';
+
+.input-field.bootstrap-select .dropdown-toggle {
+  font-size: .875rem;
+  border: none;
+  background: none;
+  color: $searchInputTextColor;
+  line-height: 1.5rem;
+
+  &:focus {
+    outline: none !important;
+  }
+}
+
+.input-field.bootstrap-select.open > .btn-default.dropdown-toggle,
+.input-field.bootstrap-select > .dropdown-toggle.bs-placeholder,
+.input-field.bootstrap-select > .dropdown-toggle,
+.input-field.bootstrap-select.btn-group.open .dropdown-toggle {
+  box-shadow: none;
+  background: none;
+  color: $searchInputTextColor;
+  padding-left: 0;
+  display: flex;
+  align-items: stretch;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &:focus:active {
+    background: none;
+    box-shadow: none;
+    color: $searchInputTextColor;
+  }
+}
+
+.input-field.bootstrap-select .popover-title {
+  background: none;
+  border: none;
+
+  .close {
+    font-weight: normal;
+    opacity: 1;
+    font-size: 1.5rem;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.input-field.bootstrap-select.btn-group .dropdown-menu:not(.inner) {
+  border-radius: 10px;
+  box-shadow: 0 1px 20px 2px rgba(0, 0, 0, .25);
+  border: none;
+  padding: 15px;
+  overflow: visible !important;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 10px solid transparent;
+    border-bottom: 13px solid #ffffff;
+  }
+}
+
+.input-field.bootstrap-select .dropdown-menu > li > a {
+  color: #83868d;
+  padding: 7px 10px;
+  display: flex;
+  align-items: center;
+
+  &:hover,
+  &:focus {
+    color: #83868d;
+    background: #ecf0f6;
+    outline: none;
+  }
+}
+
+.input-field.bootstrap-select.btn-group .dropdown-toggle .filter-option {
+  display: flex;
+  align-items: center;
+}
+
+.input-field.bootstrap-select .filter-option .filter-icon,
+.input-field.bootstrap-select .dropdown-menu > li > a .filter-icon {
+  margin-right: 10px;
+  line-height: 1;
+}
+
+.input-field.bootstrap-select .filter-option .dropdown-label,
+.dropdown-menu > li > a .dropdown-label {
+  line-height: 1;
+}
+
+.input-field.bootstrap-select.btn-group .dropdown-toggle .caret {
+  border: solid #a3a094;
+  border-width: 0 2px 2px 0;
+  padding: 5px;
+  right: 17px;
+  transform: rotate(45deg) translateY(-100%);
+}

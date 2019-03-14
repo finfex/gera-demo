@@ -1,0 +1,14 @@
+.ps {
+  display: flex;
+  align-items: center;
+
+  &-icon {
+    margin-right: 10px;
+  }
+
+  &-name {
+    font-size: .75rem;
+    line-height: 1;
+    opacity: .38;
+  }
+}

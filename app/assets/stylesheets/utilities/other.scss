@@ -1,0 +1,42 @@
+.u-noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.u-text-vertical {
+  //transform: rotate(90deg);
+  //transform-origin: left top 0;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+.v-middle {
+  vertical-align: middle !important;
+}
+
+.text-small {
+  font-size: 80%;
+}
+
+.text-muted {
+  color: unset;
+  opacity: 0.5;
+  // font-weight: 200;
+}
+
+.text-underline {
+  text-decoration: underline;
+}

@@ -1,0 +1,35 @@
+// Breakpoints
+$screen-sm: 1200px;
+$screen-md: 1520px;
+
+// Colors
+$mainYellowColor: #fecd58;
+$backYellowCollor: lighten($mainYellowColor, 28%);
+$mainRedColor: #ff0000;
+$backRedColor: transparentize($mainRedColor, .5);
+
+$mainTextColor: #464b53;
+$muteTextColor: lighten($mainTextColor, 35%);
+$mainButtonTextColor: #73611d;
+$cancelButtonTextColor: #464B53;
+$searchInputTextColor: #e0d9c2;
+
+$sidebarGray: #95989a;
+$sidebarBackgroundColor: #434c59;
+$sidebarMinifierBackgroundColor: lighten($sidebarBackgroundColor, 10%);
+$sidebarItemBorderColor: transparentize(#38424E, .5);
+$contentItemDelimiterColor: #95989a;
+
+$mistakenColor: darken($mainYellowColor, 15%);
+$deletedColor: #EF957F;
+$mainGreenColor: #75C56C;
+$preliminaryColor: #E2E2E2;
+
+// Sidebar
+$sidebarFullWidth: 322px;
+$sidebarMinifiedWidth: 50px;
+$sidebarMinifiedContentPadding: $sidebarMinifiedWidth + 10;
+$sidebarFullwidthContentPadding: 30px;
+$sidebarMinifiedLoginMarginTop: 24px; // 76px; размеры чтобы шапка в мини-версии была в ровень с раскрытой
+$sidebarMinifiedLoginMarginBottom: 16px; //48px;
+$sidebarMinifierTop: 0;

@@ -1,0 +1,26 @@
+// Source https://stackoverflow.com/questions/38228962/html-title-attribute-style
+div[aria-label]:hover {
+  position: relative;
+}
+
+div[aria-label]:hover:after {
+  content: attr(aria-label);
+  padding: 4px 8px;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  white-space: nowrap;
+  z-index: 20;
+  background: #fefefe;
+}
+
+//*[title]:hover:after {
+  //content: attr(title);
+  //padding: 4px 8px;
+  //position: absolute;
+  //left: 0;
+  //top: 100%;
+  //white-space: nowrap;
+  //z-index: 20px;
+  //background:red;
+//}

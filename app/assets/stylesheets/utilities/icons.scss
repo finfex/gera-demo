@@ -1,0 +1,30 @@
+.icon {
+  display: inline-block;
+  background-size: 100%;
+  background: no-repeat 50%;
+  vertical-align: middle;
+}
+
+.icon-alpha {
+  width: 15px;
+  height: 23px;
+  background-image: url('/icons/alfa-bank.svg');
+}
+
+.icon-qiwi {
+  width: 18px;
+  height: 20px;
+  background-image: url('/icons/qiwi.svg');
+}
+
+.icon-sber {
+  width: 17px;
+  height: 15px;
+  background-image: url('/icons/sber.svg');
+}
+
+.icon-sub-wallet {
+  width: 15px;
+  height: 15px;
+  background-image: url('/icons/sub-wallet.svg');
+}

@@ -1,0 +1,52 @@
+@import 'variables';
+
+.input-field {
+  flex-basis: 25%;
+
+  &__label {
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+
+  &__icon {
+    color: #d6cfb9;
+    font-size: 1rem;
+    line-height: 1;
+    margin-right: 5px;
+  }
+
+  &__input {
+    font-size: .875rem;
+    font-weight: normal;
+    border: none;
+    background: none;
+    color: $searchInputTextColor;
+    padding: 3px 0;
+
+    &::placeholder {
+      color: $searchInputTextColor;
+      vertical-align: middle;
+    }
+
+    &:focus {
+      outline: none;
+
+      &::placeholder {
+        color: transparent;
+      }
+    }
+  }
+}
+
+.form-block {
+  display: flex;
+  align-items: flex-start;
+}
+
+.fields-group {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-right: 10px;
+}
