@@ -5,7 +5,7 @@ lock '3.11.0'
 set :application, 'gera.finfex.tech'
 set :user, 'kassa'
 
-set :repo_url, 'https://github.com/finfex/gera.git' if ENV['USE_LOCAL_REPO'].nil?
+set :repo_url, 'https://github.com/finfex/gera-demo.git' if ENV['USE_LOCAL_REPO'].nil?
 set :keep_releases, 10
 
 set :linked_files, %w[config/database.yml config/master.key]
