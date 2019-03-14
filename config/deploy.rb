@@ -13,11 +13,11 @@ set :linked_dirs, %w[log node_modules tmp/pids tmp/cache tmp/sockets public/asse
 
 set :config_files, fetch(:linked_files)
 
-set :deploy_to, -> { "/home/#{fetch(:user)}/#{fetch(:application)}" }
+set :app_version, AppVersion.format('%M.%m.%p')
+# set :bugsnag_api_key, ENV['BUGSNAG_API_KEY']
+#set :default_env, 'BUGSNAG_API_KEY' => Settings.bugsnag_api_key
 
-#set :nvm_type, :user # or :system, depends on your nvm setup
-#set :nvm_node, File.read('.nvmrc').strip
-#set :nvm_map_bins, %w[node yarn]
+set :deploy_to, -> { "/home/#{fetch(:user)}/#{fetch(:application)}" }
 
 ask :branch, ENV['BRANCH'] || proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 
@@ -31,9 +31,6 @@ set :assets_dependencies, %w[app/assets lib/assets vendor/assets Gemfile.lock co
 set :local_assets_dir, 'public'
 
 set :puma_init_active_record, true
-
-#set :default_env, 'BUGSNAG_API_KEY' => Settings.bugsnag_api_key
-#set :bugsnag_api_key, Settings.bugsnag_api_key
 
 set :db_local_clean, false
 set :db_remote_clean, true
