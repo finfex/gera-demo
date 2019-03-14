@@ -36,6 +36,8 @@ Routes for Gera::Engine:
                                      DELETE /direction_rates/:id(.:format)                       gera/direction_rates#destroy
                       external_rates GET    /external_rates(.:format)                            gera/external_rates#index
                        external_rate GET    /external_rates/:id(.:format)                        gera/external_rates#show
+               details_exchange_rate GET    /exchange_rates/:id/details(.:format)                gera/exchange_rates#details
+                       exchange_rate GET    /exchange_rates/:id(.:format)                        gera/exchange_rates#show
              external_rate_snapshots GET    /external_rate_snapshots(.:format)                   gera/external_rate_snapshots#index
               external_rate_snapshot GET    /external_rate_snapshots/:id(.:format)               gera/external_rate_snapshots#show
                       currency_rates GET    /currency_rates(.:format)                            gera/currency_rates#index

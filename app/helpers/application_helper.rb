@@ -30,7 +30,7 @@ module ApplicationHelper
   end
 
   def show_direction_popover?
-    false
+    true
   end
 
   def ion_icon(icon, css_class: nil, text: nil, title: nil)
