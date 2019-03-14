@@ -22,6 +22,8 @@ gem 'hiredis', '~> 0.6.0'
 gem 'redis', '~> 4.0', require: ['redis', 'redis/connection/hiredis']
 gem 'sidekiq'
 gem 'sidekiq-cron'
+gem 'sidekiq-failures', github: 'mhfs/sidekiq-failures'
+gem 'sidekiq-status'
 gem 'breadcrumbs_on_rails'
 
 gem 'non-stupid-digest-assets'

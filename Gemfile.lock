@@ -29,6 +29,13 @@ GIT
     noty_flash (0.1.2)
 
 GIT
+  remote: https://github.com/mhfs/sidekiq-failures.git
+  revision: ade3c0035e8b7df0821a71328fe31dc706226aeb
+  specs:
+    sidekiq-failures (1.0.0)
+      sidekiq (>= 4.0.0)
+
+GIT
   remote: https://github.com/seuros/capistrano-puma.git
   revision: 09b11cafb2cf30386d460955d0b9013d36373309
   specs:
@@ -201,6 +208,8 @@ GEM
     chromedriver-helper (2.1.0)
       archive-zip (~> 0.10)
       nokogiri (~> 1.8)
+    chronic_duration (0.10.6)
+      numerizer (~> 0.1.1)
     coderay (1.1.2)
     coercible (1.0.0)
       descendants_tracker (~> 0.0.1)
@@ -335,6 +344,7 @@ GEM
       nenv (~> 0.1)
       shellany (~> 0.0)
     nprogress-rails (0.2.0.2)
+    numerizer (0.1.1)
     oauth (0.5.4)
     oauth2 (1.4.1)
       faraday (>= 0.8, < 0.16.0)
@@ -447,6 +457,9 @@ GEM
     sidekiq-cron (1.0.0)
       fugit (~> 1.1)
       sidekiq (>= 4.2.1)
+    sidekiq-status (1.1.1)
+      chronic_duration
+      sidekiq (>= 3.0)
     simple_form_bootstrap_inputs (0.1.0)
       bootstrap-sass (~> 3.2)
       bootstrap3-datetimepicker-rails (~> 4.17.47)
@@ -571,6 +584,8 @@ DEPENDENCIES
   settingslogic
   sidekiq
   sidekiq-cron
+  sidekiq-failures!
+  sidekiq-status
   simple_form!
   simple_form_bootstrap_inputs
   slim-rails
