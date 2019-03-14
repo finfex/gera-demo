@@ -29,8 +29,8 @@ gem 'breadcrumbs_on_rails'
 gem 'non-stupid-digest-assets'
 
 gem 'gera', path: 'vendor/gera'
-gem 'mysql2'
 gem 'authority', github: 'BrandyMint/authority', branch: 'feature/included_abilities_counter'
+gem 'pg'
 
 gem 'simple_form', git: 'git://github.com/plataformatec/simple_form.git'
 gem 'simple_form_bootstrap_inputs'

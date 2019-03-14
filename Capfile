@@ -4,7 +4,6 @@ require 'rubygems'
 require 'bundler'
 Bundler.setup(:deploy)
 
-require_relative 'app/models/settings'
 require_relative 'app/models/app_version'
 
 # Load DSL and Setup Up Stages
@@ -20,10 +19,8 @@ require 'capistrano/scm/git-with-submodules'
 install_plugin Capistrano::SCM::Git::WithSubmodules
 
 require 'capistrano/rbenv'
-require 'capistrano/nvm'
 require 'capistrano/bundler'
 require 'capistrano-db-tasks'
-require 'capistrano/maintenance'
 require 'capistrano/shell'
 require 'capistrano/puma'
 install_plugin Capistrano::Puma
@@ -37,12 +34,5 @@ require 'capistrano/faster_assets'
 require 'capistrano/rails/migrations'
 require 'bugsnag-capistrano'
 require 'capistrano/sidekiq'
-require 'capistrano/semver-tag'
-require 'slackistrano/capistrano'
-require 'capistrano/upload-config'
 
-require 'capistrano/tasks'
-require 'capistrano/my'
-install_plugin Capistrano::My
-require 'capistrano/slackistrano'
 require 'capistrano/rails/console'
