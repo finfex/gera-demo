@@ -437,6 +437,7 @@ GEM
       childprocess (~> 0.5)
       rubyzip (~> 1.2, >= 1.2.2)
     semver2 (3.4.2)
+    settingslogic (2.0.9)
     shellany (0.0.1)
     sidekiq (5.2.5)
       connection_pool (~> 2.2, >= 2.2.2)
@@ -568,6 +569,7 @@ DEPENDENCIES
   sassc-rails
   selenium-webdriver
   semver2
+  settingslogic
   sidekiq
   sidekiq-cron
   simple_form!

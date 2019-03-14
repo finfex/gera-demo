@@ -48,6 +48,7 @@ gem 'sassc-rails'
 gem 'bootstrap-sass', '~> 3.2'
 gem 'bugsnag'
 gem 'semver2'
+gem 'settingslogic'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
