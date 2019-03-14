@@ -1,4 +1,6 @@
 require 'sidekiq/web'
+require 'sidekiq/cron/web'
+require 'sidekiq-status/web'
 Sidekiq::Web.set :session_secret, Rails.application.credentials[:secret_key_base]
 
 Rails.application.routes.draw do
