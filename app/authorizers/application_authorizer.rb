@@ -1,5 +1,6 @@
 # Other authorizers should subclass this one
 class ApplicationAuthorizer < Authority::Authorizer
+  include AuthorizerAdjectives
 
   # Any class method from Authority::Authorizer that isn't overridden
   # will call its authorizer's default method.
