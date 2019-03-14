@@ -1,0 +1,68 @@
+SIDEKIQ inline mode
+**************************************************
+⛔️ WARNING: Sidekiq testing API enabled, but this is not the test environment.  Your jobs will not go to Redis.
+**************************************************
+                   Prefix Verb URI Pattern                                                                              Controller#Action
+                     root GET  /                                                                                        redirect(301, /direction_rates)
+                     gera      /                                                                                        Gera::Engine
+              sidekiq_web      /sidekiq                                                                                 Sidekiq::Web
+       rails_service_blob GET  /rails/active_storage/blobs/:signed_id/*filename(.:format)                               active_storage/blobs#show
+rails_blob_representation GET  /rails/active_storage/representations/:signed_blob_id/:variation_key/*filename(.:format) active_storage/representations#show
+       rails_disk_service GET  /rails/active_storage/disk/:encoded_key/*filename(.:format)                              active_storage/disk#show
+update_rails_disk_service PUT  /rails/active_storage/disk/:encoded_token(.:format)                                      active_storage/disk#update
+     rails_direct_uploads POST /rails/active_storage/direct_uploads(.:format)                                           active_storage/direct_uploads#create
+
+Routes for Gera::Engine:
+                                root GET    /                                                    gera/direction_rates#index
+                     payment_systems GET    /payment_systems(.:format)                           gera/payment_systems#index
+                                     POST   /payment_systems(.:format)                           gera/payment_systems#create
+                  new_payment_system GET    /payment_systems/new(.:format)                       gera/payment_systems#new
+                 edit_payment_system GET    /payment_systems/:id/edit(.:format)                  gera/payment_systems#edit
+                      payment_system GET    /payment_systems/:id(.:format)                       gera/payment_systems#show
+                                     PATCH  /payment_systems/:id(.:format)                       gera/payment_systems#update
+                                     PUT    /payment_systems/:id(.:format)                       gera/payment_systems#update
+                                     DELETE /payment_systems/:id(.:format)                       gera/payment_systems#destroy
+     currency_rate_history_intervals GET    /currency_rate_history_intervals(.:format)           gera/currency_rate_history_intervals#index
+    direction_rate_history_intervals GET    /direction_rate_history_intervals(.:format)          gera/direction_rate_history_intervals#index
+                          currencies GET    /currencies(.:format)                                gera/currencies#index
+                 last_direction_rate GET    /direction_rates/:id/last(.:format)                  gera/direction_rates#last
+                     direction_rates GET    /direction_rates(.:format)                           gera/direction_rates#index
+                                     POST   /direction_rates(.:format)                           gera/direction_rates#create
+                  new_direction_rate GET    /direction_rates/new(.:format)                       gera/direction_rates#new
+                 edit_direction_rate GET    /direction_rates/:id/edit(.:format)                  gera/direction_rates#edit
+                      direction_rate GET    /direction_rates/:id(.:format)                       gera/direction_rates#show
+                                     PATCH  /direction_rates/:id(.:format)                       gera/direction_rates#update
+                                     PUT    /direction_rates/:id(.:format)                       gera/direction_rates#update
+                                     DELETE /direction_rates/:id(.:format)                       gera/direction_rates#destroy
+                      external_rates GET    /external_rates(.:format)                            gera/external_rates#index
+                       external_rate GET    /external_rates/:id(.:format)                        gera/external_rates#show
+             external_rate_snapshots GET    /external_rate_snapshots(.:format)                   gera/external_rate_snapshots#index
+              external_rate_snapshot GET    /external_rate_snapshots/:id(.:format)               gera/external_rate_snapshots#show
+                      currency_rates GET    /currency_rates(.:format)                            gera/currency_rates#index
+                                     POST   /currency_rates(.:format)                            gera/currency_rates#create
+                   new_currency_rate GET    /currency_rates/new(.:format)                        gera/currency_rates#new
+                  edit_currency_rate GET    /currency_rates/:id/edit(.:format)                   gera/currency_rates#edit
+                       currency_rate GET    /currency_rates/:id(.:format)                        gera/currency_rates#show
+                                     PATCH  /currency_rates/:id(.:format)                        gera/currency_rates#update
+                                     PUT    /currency_rates/:id(.:format)                        gera/currency_rates#update
+                                     DELETE /currency_rates/:id(.:format)                        gera/currency_rates#destroy
+                 currency_rate_modes POST   /currency_rate_modes(.:format)                       gera/currency_rate_modes#create
+              new_currency_rate_mode GET    /currency_rate_modes/new(.:format)                   gera/currency_rate_modes#new
+             edit_currency_rate_mode GET    /currency_rate_modes/:id/edit(.:format)              gera/currency_rate_modes#edit
+                  currency_rate_mode PATCH  /currency_rate_modes/:id(.:format)                   gera/currency_rate_modes#update
+                                     PUT    /currency_rate_modes/:id(.:format)                   gera/currency_rate_modes#update
+activate_currency_rate_mode_snapshot POST   /currency_rate_mode_snapshots/:id/activate(.:format) gera/currency_rate_mode_snapshots#activate
+        currency_rate_mode_snapshots GET    /currency_rate_mode_snapshots(.:format)              gera/currency_rate_mode_snapshots#index
+                                     POST   /currency_rate_mode_snapshots(.:format)              gera/currency_rate_mode_snapshots#create
+    edit_currency_rate_mode_snapshot GET    /currency_rate_mode_snapshots/:id/edit(.:format)     gera/currency_rate_mode_snapshots#edit
+         currency_rate_mode_snapshot GET    /currency_rate_mode_snapshots/:id(.:format)          gera/currency_rate_mode_snapshots#show
+                                     PATCH  /currency_rate_mode_snapshots/:id(.:format)          gera/currency_rate_mode_snapshots#update
+                                     PUT    /currency_rate_mode_snapshots/:id(.:format)          gera/currency_rate_mode_snapshots#update
+                        rate_sources GET    /rate_sources(.:format)                              gera/rate_sources#index
+                                     POST   /rate_sources(.:format)                              gera/rate_sources#create
+                     new_rate_source GET    /rate_sources/new(.:format)                          gera/rate_sources#new
+                    edit_rate_source GET    /rate_sources/:id/edit(.:format)                     gera/rate_sources#edit
+                         rate_source GET    /rate_sources/:id(.:format)                          gera/rate_sources#show
+                                     PATCH  /rate_sources/:id(.:format)                          gera/rate_sources#update
+                                     PUT    /rate_sources/:id(.:format)                          gera/rate_sources#update
+                                     DELETE /rate_sources/:id(.:format)                          gera/rate_sources#destroy

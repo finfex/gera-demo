@@ -2,7 +2,7 @@ require 'sidekiq/web'
 Sidekiq::Web.set :session_secret, Rails.application.credentials[:secret_key_base]
 
 Rails.application.routes.draw do
-  get 'dashboard/index'
+  root to: redirect('/direction_rates')
   mount Gera::Engine => '/'
 
 	#Sidekiq::Web.use Rack::Auth::Basic do |username, password|
