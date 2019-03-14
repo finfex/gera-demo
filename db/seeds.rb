@@ -6,9 +6,11 @@ FactoryBot.create :rate_source_exmo
 FactoryBot.create :rate_source_cbr
 FactoryBot.create :rate_source_cbr_avg
 FactoryBot.create :rate_source_manual
+FactoryBot.create :rate_source_bitfinex
 
 Money::Currency.all.each { |cur| Gera::PaymentSystem.create! name: cur.name, currency: cur }
 
 Gera::CBRRatesWorker.new.perform
 Gera::EXMORatesWorker.new.perform
 Gera::DirectionsRatesWorker.new.perform
+Gera::BitfinexRatesWorker.new.perform
