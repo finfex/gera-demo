@@ -8,7 +8,7 @@ gem 'rails', '~> 5.2.2.1'
 # Use Puma as the app server
 gem 'puma'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
+gem 'sassc-rails'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
@@ -88,7 +88,6 @@ end
 group :development do
   gem 'guard'
   gem 'terminal-notifier-guard' # , '~> 1.6.1', require: darwin_only('terminal-notifier-guard')
-
   gem 'guard-bundler'
   gem 'guard-ctags-bundler'
   gem 'guard-rails'
