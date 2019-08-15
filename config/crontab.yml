@@ -11,12 +11,12 @@ Gera::DirectionsRatesWorker:
 Gera::PurgeCurrencyRatesWorker:
   cron: '27 2 * * *'
   class: Gera::PurgeCurrencyRatesWorker
-  queue: purgers
+  queue: default
 
 Gera::PurgeDirectionRatesWorker:
   cron: '27 3 * * *'
   class: Gera::PurgeDirectionRatesWorker
-  queue: purgers
+  queue: default
 
 Gera::CreateHistoryIntervalsWorker:
   cron: '*/17 * * * *'
