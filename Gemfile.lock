@@ -588,6 +588,7 @@ DEPENDENCIES
   rails (~> 5.2.2.1)
   rails-assets-noty!
   redis (~> 4.0)
+  ruby-progressbar
   sassc-rails
   selenium-webdriver
   semver2
