@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.6.1'
+ruby '2.6.6'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.2.1'
@@ -28,7 +28,7 @@ gem 'breadcrumbs_on_rails'
 
 gem 'non-stupid-digest-assets'
 
-gem 'gera', path: 'vendor/gera'
+gem 'gera', github: 'finfex/gera'
 gem 'authority', github: 'BrandyMint/authority', branch: 'feature/included_abilities_counter'
 gem 'pg'
 
@@ -89,8 +89,6 @@ end
 group :development do
   gem 'guard'
   gem 'terminal-notifier-guard' # , '~> 1.6.1', require: darwin_only('terminal-notifier-guard')
-  gem 'guard-bundler'
-  gem 'guard-ctags-bundler'
   gem 'guard-rails'
   gem 'guard-rubocop'
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
