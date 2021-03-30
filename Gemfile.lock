@@ -29,8 +29,31 @@ GIT
     noty_flash (0.1.2)
 
 GIT
-  remote: https://github.com/finfex/gera.git
-  revision: 6e5090d44ad586767b12d5dbbbae0788cb77b05e
+  remote: https://github.com/mhfs/sidekiq-failures.git
+  revision: 027f25e4fb4396c458980bfbda8ac2cbd8a9882a
+  specs:
+    sidekiq-failures (1.0.0)
+      sidekiq (>= 4.0.0)
+
+GIT
+  remote: https://github.com/seuros/capistrano-puma.git
+  revision: 186826736ac83c550fd6129728284584b8c9c782
+  specs:
+    capistrano3-puma (5.0.4)
+      capistrano (~> 3.7)
+      capistrano-bundler
+      puma (>= 4.0, < 6.0)
+
+GIT
+  remote: https://github.com/thoughtbot/factory_bot_rails.git
+  revision: c8b3f90abc65c8758eb5f2023e447fe5c03ea475
+  specs:
+    factory_bot_rails (6.1.0)
+      factory_bot (~> 6.1.0)
+      railties (>= 5.0.0)
+
+PATH
+  remote: vendor/gera
   specs:
     gera (0.3.4)
       active_link_to
@@ -54,30 +77,6 @@ GIT
       sidekiq
       simple_form
       virtus
-
-GIT
-  remote: https://github.com/mhfs/sidekiq-failures.git
-  revision: 027f25e4fb4396c458980bfbda8ac2cbd8a9882a
-  specs:
-    sidekiq-failures (1.0.0)
-      sidekiq (>= 4.0.0)
-
-GIT
-  remote: https://github.com/seuros/capistrano-puma.git
-  revision: 186826736ac83c550fd6129728284584b8c9c782
-  specs:
-    capistrano3-puma (5.0.4)
-      capistrano (~> 3.7)
-      capistrano-bundler
-      puma (>= 4.0, < 6.0)
-
-GIT
-  remote: https://github.com/thoughtbot/factory_bot_rails.git
-  revision: c8b3f90abc65c8758eb5f2023e447fe5c03ea475
-  specs:
-    factory_bot_rails (6.1.0)
-      factory_bot (~> 6.1.0)
-      railties (>= 5.0.0)
 
 GEM
   remote: https://rails-assets.org/
