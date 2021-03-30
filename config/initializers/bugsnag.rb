@@ -1,5 +1,4 @@
 Bugsnag.configure do |config|
-  config.api_key = Rails.application.credentials[:bugsnag_api_key]
   config.app_version = AppVersion.format('%M.%m.%p') # rubocop:disable Style/FormatStringToken
   config.notify_release_stages = %w[production staging]
   config.send_code = true

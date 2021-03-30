@@ -2,6 +2,7 @@ SIDEKIQ inline mode
 **************************************************
 ⛔️ WARNING: Sidekiq testing API enabled, but this is not the test environment.  Your jobs will not go to Redis.
 **************************************************
+WARNING: Sidekiq::Web.session_secret= is no longer relevant and will be removed in Sidekiq 7.0. /home/danil/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/sidekiq-6.2.0/lib/sidekiq/web.rb:75:in `set'
                    Prefix Verb URI Pattern                                                                              Controller#Action
                      root GET  /                                                                                        redirect(301, /direction_rates)
                      gera      /                                                                                        Gera::Engine
