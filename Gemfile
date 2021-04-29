@@ -16,6 +16,8 @@ source 'https://rails-assets.org' do
     gem 'rails-assets-noty'
 end
 
+gem 'foreman'
+
 gem 'hiredis', '~> 0.6.0'
 gem 'redis', '~> 4.0', require: ['redis', 'redis/connection/hiredis']
 gem 'sidekiq'

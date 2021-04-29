@@ -260,6 +260,7 @@ GEM
       ruby2_keywords
     faraday-net_http (1.0.1)
     ffi (1.15.0)
+    foreman (0.87.2)
     formatador (0.2.5)
     fugit (1.4.4)
       et-orbi (~> 1.1, >= 1.1.8)
@@ -579,6 +580,7 @@ DEPENDENCIES
   draper
   factory_bot
   factory_bot_rails!
+  foreman
   gera!
   guard
   guard-rails

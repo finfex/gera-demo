@@ -8,6 +8,7 @@
 > bundle exec rake db:setup
 > bundle exec rake db:seed
 
+
 # Configuration
 
 Environment variables:
@@ -15,6 +16,10 @@ Environment variables:
 1. `BUGSNAG_API_KEY`
 2. `SIDEKIQ_USERNAME`
 3. `SIDEKIQ_PASSWORD`
+
+# Run
+
+> bundle exec foreman start
 
 
 # Update gera gem
