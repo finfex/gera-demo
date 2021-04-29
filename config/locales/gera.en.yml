@@ -8,6 +8,8 @@ en:
 
       direction_rate:
         title: 'Direction Rate #%{id}'
+      currencies_table:
+        calculation_method: Calculations method
     currency_rates:
       currency_rate:
         title: 'Currency Rate %{title}'
