@@ -68,7 +68,6 @@ gem 'jbuilder', '~> 2.5'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'dapi-archivable', '~> 0.1.2', require: 'archivable'
-gem 'ionicons-rails'
 gem 'active_link_to', github: 'BrandyMint/active_link_to'
 
 gem 'bootstrap-kaminari-views'
@@ -82,6 +81,8 @@ gem 'ruby-progressbar'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'pry-byebug'
+  gem 'pry-rails'
 end
 
 group :development do

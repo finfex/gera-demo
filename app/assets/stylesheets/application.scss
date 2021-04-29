@@ -20,7 +20,7 @@
 
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
-@import 'ionicons';
+// @import 'ionicons';
 @import 'variables';
 @import 'utilities/*';
 @import 'shared/*';
@@ -29,4 +29,8 @@ html {
   font-family: "ProximaNova", sans-serif;
   font-size: 16px;
   min-width: 960px;
+}
+
+.table-narrow {
+  width: auto;
 }

@@ -27,8 +27,13 @@ module SmartFormHelper
     # best in place
     # [:input, :textarea, :select, :checkbox, :date]
     if column_type.nil?
-      as = :input
-
+      # PaymentSystem#currency
+      if %w[currency currency_iso_code].include?(attribute_name)
+        as = :select
+        collection = Money::Currency.all.map(&:iso_code).map { |v| [v,v] }
+      else
+        as = :input
+      end
     elsif column_type.type == :boolean
       as = :checkbox
     elsif record_class.respond_to?(:enumerized_attributes) && record_class.enumerized_attributes[column].present? || # gem enumerize
@@ -38,12 +43,6 @@ module SmartFormHelper
       collection = smart_get_collection(record_class, attribute_name, record)
     else
       as = :input
-    end
-
-    # PaymentSystem#currency
-    if as == :input && attribute_name == 'currency'
-      as = :select
-      collection = Money::Currency.all.map(&:iso_code)
     end
 
     [as, collection]

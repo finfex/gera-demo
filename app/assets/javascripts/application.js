@@ -11,6 +11,7 @@
 // about supported directives.
 //
 //= require jquery
+//= require best_in_place
 //= require rails-ujs
 //= require nprogress
 //= require nprogress-turbolinks
@@ -20,3 +21,8 @@
 //= require noty_flash
 //= require noty_ajax_handlers
 //= require_tree .
+
+document.addEventListener("turbolinks:load", function() {
+  /* Activating Best In Place */
+  jQuery(".best_in_place").best_in_place();
+});

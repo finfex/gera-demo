@@ -13,7 +13,7 @@ module ApplicationHelper
     MIDDOT
   end
 
-  def ps_icon(ps)
+  def ps_icon(ps, *options)
     ps.name
   end
 
